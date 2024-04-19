@@ -1,5 +1,5 @@
-import 'package:appgain_task/colors.dart';
-import 'package:appgain_task/features/home/home.dart';
+import 'package:appgain_task/core/utils/colors.dart';
+import 'package:appgain_task/features/home/presentation/view/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,7 +1,7 @@
-import 'package:appgain_task/colors.dart';
+import 'package:appgain_task/core/utils/api_constant.dart';
+import 'package:appgain_task/core/utils/colors.dart';
 import 'package:appgain_task/features/details/widgets/back_button.dart';
-import 'package:appgain_task/models/movie.dart';
-import 'package:appgain_task/utils/constant.dart';
+import 'package:appgain_task/features/home/data/models/movie.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -34,7 +34,7 @@ class Details extends StatelessWidget {
                   bottomRight: Radius.circular(24),
                 ),
                 child: Image.network(
-                  '${Constant.imagePath}${movie.backdrop_path}',
+                  '${ApiConstant.imagePath}${movie.backdrop_path}',
                   filterQuality: FilterQuality.high,
                   fit: BoxFit.cover,
                 ),
@@ -55,7 +55,7 @@ class Details extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    movie.overview,
+                    '$movie.overview\n$dummyText',
                     style: GoogleFonts.belleza(
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -138,3 +138,10 @@ class Details extends StatelessWidget {
     );
   }
 }
+
+String dummyText = """
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+this text is commonly used as a placeholder to demonstrate the layout and typography of a document or webpage without distracting the viewer with meaningful content.
+
+""";

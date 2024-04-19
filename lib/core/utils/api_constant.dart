@@ -1,4 +1,4 @@
-class Constant {
+class ApiConstant {
   static const baseUrl = 'https://api.themoviedb.org/3/movie';
   static const popularUrl = '$baseUrl/popular?api_key=$apiKey';
 

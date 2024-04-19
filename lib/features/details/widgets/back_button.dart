@@ -1,4 +1,4 @@
-import 'package:appgain_task/colors.dart';
+import 'package:appgain_task/core/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomBackButton extends StatelessWidget {
